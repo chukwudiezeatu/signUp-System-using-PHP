@@ -25,7 +25,7 @@ if (isset($_POST["signup"])) {
         header("location: ../signup.php?error=invalid_username");
         exit();
     }
-    if (pwdMatch($pwd, $confirm_pwd)) {
+    if (pwdMatch($pwd, $confirm_pwd) !== false) {
         header("location: ../signup.php?error=passwords_dont_match");
         exit();
     }

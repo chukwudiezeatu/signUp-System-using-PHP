@@ -2,7 +2,7 @@
 include_once 'header.php'
 ?>
 
-<section class="mt-5 container">
+<section class="mt-5 container"> 
 
     <?php
         if(isset($_GET["error"])){

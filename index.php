@@ -6,12 +6,21 @@ include_once 'header.php';
     <h1 class="text-center display-5">
         <?php 
             if (isset($_SESSION['id'])) {
-                echo 'Welcome ' . $_SESSION['username'] . $_SESSION["fullname"];
+                echo 'Welcome ';
             } else {
                 echo 'Welcome';
             }
         ?>
     </h1>
+    <h2 class="text-center display-4">
+    <?php 
+            if (isset($_SESSION['id'])) {
+                echo 'hi ' . $_SESSION['username'];
+            } else {
+                echo '';
+            }
+        ?>
+    </h2>
 </section>
 
 <?php

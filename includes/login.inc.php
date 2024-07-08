@@ -8,7 +8,7 @@ if(isset($_POST["login"])){
 
     require_once "db-handler.inc.php";
 
-    if (emptyLoginInput($username, $pwd)) {
+    if (emptyLoginInput($username, $pwd) !== false) {
         header("location: ../login.php?error=empty_input");
         exit();
     }
